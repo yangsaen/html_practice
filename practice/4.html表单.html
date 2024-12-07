@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <form action="#填写url需要api">
+        <label for="username">用户名</label>
+        <input type="text" id="username" placeholder="请输入用户名">
+        <br>
+
+        <label for="pwd">密码</label>
+        <input type="password" id="pwd" placeholder="请输入密码">
+        <br>
+
+        <label>验证码</label>
+        <input type="text" value="请输入内容">
+        <br>
+
+        <!--单选-->
+        <label for="">性别</label>
+        <input type="radio" name="gender">男
+        <input type="radio" name="gender">女
+        <input type="radio" name="gender">其他
+        <br><br>
+
+        <!-- #region 多选-->
+        <label for="">爱好</label>
+        <input type="checkbox" name="hobby">唱歌
+        <input type="checkbox" name="hobby">跳舞
+        <input type="checkbox" name="hobby">rap
+        <input type="checkbox" name="hobby">篮球
+        <br><br>
+
+        <input type="submit" value="上传" name="" id="">
+    </form>
+<hr>
+
+
+    <!-- #region ai案例-->
+    <form action="submit.php" method="post">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="submit" value="Submit">
+      </form>
+
+</body>
+</html>
