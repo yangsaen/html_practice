@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        .father {
+            background-color: brown;
+            /* height: 200px; */
+            border: 10px solid rebeccapurple ;
+            overflow: hidden;
+            /* 如果不设置宽度，清除float的方法 */
+        }
+
+        /* 伪元素清楚float方法： */
+        /* .father::after {
+            content: "";
+            display: table;
+            clear: both;
+        } */
+
+        .left-son {
+            width: 100px;
+            height: 100px;
+            /* w100+h100 */
+            background-color: burlywood;
+            float: left;
+        }
+
+        .right-son {
+        width: 100px;
+        height: 100px;
+        background-color: cornflowerblue;    
+        float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="father"> 
+        <div class="left-son">左浮动</div>
+        <div class="right-son">右浮动</div>
+
+    </div>
+    <p>清除浮动测试文本清除浮动测试文本清除浮动测试文本清除浮动测试文本清除浮动测试文本清除浮动测试文本</p>
+</body>
+</html>
