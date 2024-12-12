@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本语法</title>
+
+</head>
+<body>
+    <script>
+        var x;
+        // 函数作用域
+        let y=5;
+        // 块级作用域，更安全，常用
+        const PI=3.14
+        console.log(x,y,PI);
+        let name="如花";
+        console.log(name);
+        let empty_value=null;
+        console.log(null);
+        // null 代表空值，是赋予的
+        // undefined是没有赋予任何值
+       
+        let age=18;
+        if (age>18) {
+            console.log('你已经成年了');
+            
+        } else {
+            console.log('未成年');
+            
+        }
+
+        // let time=12
+        // if (time<12) {
+        //     alert('上午好')
+        // } else if (time<18){
+        //     alert('下午好')
+        // } else {
+        //     alert('晚上好')
+        // }
+
+        console.log('for循环');
+        for (let index = 1; index <= 10; index++) {
+            console.log(index);
+            ;
+        }
+        // 无限循环用while，有限循环用for，有迭代器
+        console.log('while循环');
+        index=1
+        while (index<=10) {
+            console.log(index);
+            index++
+        }
+
+        console.log('循环关键字');
+        
+        for (let index = 0; index < 5; index++) {
+            if (index==2) {
+                continue; 
+                // 跳过此次，继续下次循环
+            }
+            if (index==4) {
+                break;
+                // 中止该循环
+            }
+            console.log(index);
+            
+        }
+        
+    </script>
+</body>
+</html>
